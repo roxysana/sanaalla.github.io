@@ -189,6 +189,50 @@ h5 {
 .row1{
   float: left;
 }
+
+
+/*THIS SHOULD BE THE BUTTON STYLE*/
+
+
+.button {
+margin-top: 8%;
+
+  display: inline-block;
+  width: 280px;
+  padding-top:5px;
+  height: 60px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+  width: 250px;
+  border-radius: 7px;
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+text-align: center;
+
+  /* Set up the hover */
+
+  background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(#A7C7B8, #8d9896);
+  background-size: 0 10px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.button:hover {
+  /* The following line makes the underline only as wide as the text */
+  background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(#A7C7B8, #5D4358);
+color: #ebc9c4;
+
+
+
+}
+a:hover {
+  text-decoration: none;
+  color: #ebc9c4;
+}
+
+
 /* headr
 ==================================================*/
 
@@ -407,6 +451,13 @@ h5 {
     font-size: 17px;
     margin: 2.4em 0 .8em;
 }
+.box-label {
+  color: #B16E6C;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 17px;
+  margin: 2.4em 0 .8em;
+}
 
 .box-primary-nav .box-social {
     display: inline-block;
@@ -449,8 +500,7 @@ h5 {
     vertical-align: middle;
 }
 .container-fluid {
-background: url(../img/gradient.png);
-width:100%;}
+background-image: linear-gradient(to right, #5d4358,#a7c7b8);}
 
 .box-intro em {
     font-style: normal;
@@ -910,7 +960,7 @@ footer img {
 .top-bar {
     color: #333;
     padding: 20px 0 150px;
-    background: url(../img/gradient.png);
+    background-image: linear-gradient(to right, #5d4358,#a7c7b8);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -1116,8 +1166,10 @@ textarea:focus {
 
 .cat-ul li i {
     margin-right: 10px;
-    color: #B16E6C;
+    color: #ebc9c4;
 }
+.fa, .fas {
+  color: #ebc9c4;}
 
 
 /* Responsive media queries
