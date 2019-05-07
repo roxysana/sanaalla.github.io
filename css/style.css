@@ -27,7 +27,8 @@
 /* Google fonts & font family
 ==================================================*/
 
-@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700);
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
 
 /* General
 ==================================================*/
@@ -37,7 +38,7 @@ body {
     height: 100%;
     font-family: 'Work Sans', sans-serif;
     line-height: 1.8;
-    color: #999
+    color: #494b4f;
 }
 
 .no-padding {
