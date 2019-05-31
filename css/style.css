@@ -922,7 +922,18 @@ footer img {
     margin: 0 auto;
 }
 
+.box-header.menu-is-open {
+  background-color:#716571;
+}
 
+.box-primary-nav-trigger .box-menu-icon.is-clicked::before, .box-primary-nav-trigger .box-menu-icon.is-clicked::after
+{
+  background-color:white;
+}
+
+/* span.box-menu-icon.is-clicked {
+  display:none;
+} */
 /* backto top
 ==================================================*/
 
@@ -1223,6 +1234,10 @@ textarea:focus {
     }
     .box-primary-nav .box-social a {
         font-size: 23px;
+    }
+
+    .top-bar {
+      height:13%;
     }
 .top-bar p {
   display:none;
