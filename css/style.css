@@ -1,31 +1,4 @@
-/*
-* Box Theme
-* Created by : Ahmed Eissa
-* website : www.ahmedessa.net
-* behance : https://www.behance.net/3essa
-*/
 
-
-/* Table of Content
-==================================================
-	- Google fonts & font family -
-	- General -
-    - typography -
-    - Preloader -
-	- Header -
-    - box intro section -
-    - Portfoilo section -
-    - Footer -
-    - About page -
-    - Services page -
-    - contact page -
-    - Portfolio single page -
-    - Responsive media queries -
-*/
-
-
-/* Google fonts & font family
-==================================================*/
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
 
@@ -38,8 +11,12 @@ body {
     height: 100%;
     font-family: 'Work Sans', sans-serif;
     line-height: 1.8;
-    color: #494b4f;
+    color: #6d4b4b;
+    width: 100%;
+    margin: 0;
+overflow-x: hidden;
 }
+
 
 .no-padding {
     padding-left: 0;
@@ -86,28 +63,84 @@ a {
     color: #B16E6C;
     font-size: 11px;
 }
+.spacer20 {
+  height: 10px;
+  width: 100%; }
+
+.spacer40 {
+  height: 20px;
+  width: 100%; }
+
+.spacer80 {
+  height: 40px;
+  width: 100%; } }
+
+.page {
+
+margin: 0;
+width: auto;
+overflow: hidden; }
+
+.shadow {
+box-shadow: -2 -2 9 rgba(0, 0, 0, 0.3); }
+
+
+::-moz-selection {
+  background: #FFE9E3;
+  color: #F69679;
+  -webkit-text-fill-color: #F69679; }
+
+::selection {
+background-color:#89b1e2;
+  color: white;
+  -webkit-text-fill-color: white; }
+
+.spacer20 {
+  height: 20px;
+  width: 100%; }
+
+.spacer40 {
+  height: 40px;
+  width: 100%; }
+
+.spacer50 {
+  height: 50px;
+  width: 100%; }
+
+.spacer80 {
+  height: 80px;
+  width: 100%; }
 
 
 /* typography
 ==================================================*/
 
 
+
 h1 {
-  color: #ebc9c4;
+  color: #f9e1dd;
     font-size: 60px;
-    text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 300;
 }
  .box-headline h1 {
    color: white;
  }
 
 h3 {
-    color: #393939;
+
 }
 
 h5 {
     color: #B16E6C;
+}
+
+.txt-rotate {
+  color:white;
+  font-weight:500;
+}
+
+p, li {
+  font-size: 1.2em;
 }
 
 
@@ -211,39 +244,29 @@ h5 {
 
 .button {
 margin-top: 8%;
-
   display: inline-block;
-  width: 280px;
-  padding-top:5px;
-  height: 60px;
+  padding:5px 10px 5px 20px;
   text-decoration: none;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   color: #ffffff;
-  width: 250px;
   border-radius: 7px;
+  border: 2px solid white; /* Green */
 
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 text-align: center;
 
-  /* Set up the hover */
-
-  background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(#A7C7B8, #8d9896);
-  background-size: 0 10px, auto;
-  background-repeat: no-repeat;
-  background-position: center bottom;
 }
 
 .button:hover {
   /* The following line makes the underline only as wide as the text */
-  background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(#A7C7B8, #5D4358);
 color: #ebc9c4;
+background-color:white;
 
 
 
 }
 a:hover {
-  text-decoration: none;
+  text-decoration: none!important;
   color: #ebc9c4;
 }
 
@@ -256,7 +279,6 @@ a:hover {
     top: 0;
     left: 0;
     background: rgba(255, 255, 255, 0.95);
-    height: 50px;
     width: 100%;
     z-index: 3;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -265,8 +287,11 @@ a:hover {
 }
 
 .box-header {
-    height: 80px;
-    background: transparent;
+  color: #333;
+  background-image: linear-gradient(to right, #e87f6e,#89b1e2);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
     box-shadow: none;
 }
 
@@ -281,7 +306,7 @@ a:hover {
 
 .box-header.is-fixed {
     position: fixed;
-    top: -80px;
+    top:-15px;
     background-color: rgba(255, 255, 255, 0.96);
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
@@ -290,8 +315,8 @@ a:hover {
 }
 
 .box-header.is-visible {
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    /* -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); */
 }
 
 .box-header.menu-is-open {
@@ -300,7 +325,7 @@ a:hover {
 
 .box-logo {
     display: block;
-    padding: 20px;
+padding: 20px 20px 0;
 }
 
 .box-primary-nav-trigger {
@@ -411,7 +436,7 @@ a:hover {
     top: 0;
     height: 100%;
     width: 100%;
-    background: #60485c;
+    background: white;
     z-index: 2;
     text-align: center;
     padding: 50px 0;
@@ -446,9 +471,9 @@ a:hover {
     border-radius: 0.25em;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-    color: #fff;
+    color: #c17b7b;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 .box-primary-nav a:focus {
     outline: none;
@@ -504,10 +529,11 @@ a:hover {
 ==================================================*/
 
 .box-intro {
-    text-align: center;
+
     display: table;
     height: 100vh;
     width: 100%;
+    padding-left:25%;
 }
 
 .box-intro .table-cell {
@@ -515,7 +541,8 @@ a:hover {
     vertical-align: middle;
 }
 .container-fluid {
-background-image: linear-gradient(to right, #5d4358,#a7c7b8);}
+  background-image: linear-gradient(to right, #e87f6e,#89b1e2);
+}
 
 .box-intro em {
     font-style: normal;
@@ -985,32 +1012,35 @@ footer img {
 
 .top-bar {
     color: #333;
-    background-image: linear-gradient(to right, #5d4358,#a7c7b8);
+    background-image: linear-gradient(to right, #e87f6e,#89b1e2);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
     text-align: center;
-    height:10%;
 }
 
 
 
 .top-bar p {
-  padding:2%;
+padding:10px 0 10px 0;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #ebc9c4;
+    color: #f2dede;
 }
 
-.top-bar p a {
-    color: #ebc9c4;
+.project-top-bar p a, .top-bar p a {
+  color: #eaf5ff;
 }
 
 .top-bar p a:hover,
-.top-bar p a:focus {
-    color: white;
-    text-decoration: none;
+.top-bar p a:focus,
+.project-top-bar p a:hover,
+.project-top-bar p a:focus
+
+ {
+    color: #f2dede;
+    text-decoration: underline!important;
 }
 
 .social-ul {

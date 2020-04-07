@@ -38,6 +38,7 @@
   gtag('config', 'UA-156358591-1');
 </script>
 
+
 </head>
 
 <body>
@@ -82,17 +83,18 @@
             </ul>
         </nav>
         <!-- end nav -->
+        <!-- top bar -->
+
+        <!-- end top bar -->
     </div>
 
-    <!-- top bar -->
-    <div class="top-bar">
-        <h1>portfolio</h1>
-        <p><a href="index.html">Home</a> / Portfolio</p>
-    </div>
-    <!-- end top bar -->
+
 
     <!-- main container -->
     <div class="main-container portfolio-inner clearfix">
+      <div class="top-bar">
+          <p><a href="index.html">Home</a> / Portfolio</p>
+      </div>
         <!-- portfolio div -->
         <div class="portfolio-div">
             <div class="portfolio">
@@ -101,12 +103,10 @@
                     <nav class="categories text-center">
                         <ul class="portfolio_filter">
                             <li><a href="" class="active" data-filter="*">All</a></li>
-                            <li><a href="" data-filter=".webdesign">UX/UI</a></li>
-                            <li><a href="" data-filter=".branding">Branding</a></li>
-                            <li><a href="" data-filter=".printdesign">Print design</a></li>
-                            <li><a href="" data-filter=".datavisualization">Data visualization</a></li>
-                            <li><a href="" data-filter=".research">Research</a></li>
-                            <li><a href="" data-filter=".code">Code</a></li>
+                            <li><a href="" data-filter=".webdesign">UX/UI design</a></li>
+                            <li><a href="" data-filter=".code">Web development</a></li>
+                            <li><a href="" data-filter=".branding, .printdesign">Graphic design</a></li>
+                            <li><a href="" data-filter=".research, .datavisualization">Research</a></li>
 
                         </ul>
                     </nav>
@@ -114,21 +114,81 @@
                 <!-- portfolio_filter -->
 
                 <div class="no-padding portfolio_container">
+                  <!-- single work -->
+                        <div class="col-md-3 col-sm-6 webdesign">
+                            <a href="gendertracker.html" class="portfolio_item">
+                                <img src="img/portfolio/011.jpg" alt="image" class="img-responsive" />
+                                <div class="portfolio_item_hover">
+                                    <div class="portfolio-border clearfix">
+                                        <div class="item_info">
+                                            <span>Gender Tracker</span>
+                                            <em>UX/UI Design</em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
                     <!-- single work -->
                     <div class="col-md-3 col-sm-6  branding printdesign">
-                        <a href="01.html" class="portfolio_item">
+                        <a href="diverge.html" class="portfolio_item">
                             <img src="img/portfolio/01.jpg" alt="image" class="img-responsive" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Event Branding</span>
-                                        <em>Branding / Print design</em>
+                                        <span>Diverge</span>
+                                        <em>Graphic Design</em>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <!-- end single work -->
+                    <!-- single work -->
+                          <div class="col-md-3 col-sm-6 webdesign code">
+                              <a href="cicero.html" class="portfolio_item">
+                                  <img src="img/portfolio/014.png" alt="image" class="img-responsive" />
+                                  <div class="portfolio_item_hover">
+                                      <div class="portfolio-border clearfix">
+                                          <div class="item_info">
+                                              <span>Cicero</span>
+                                              <em>UX/UI Design | Web Development</em>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                          <!-- end single work -->
+                          <!-- single work -->
+                                <div class="col-md-3 col-sm-6 datavisualization research webdesign code">
+                                    <a href="15.html" class="portfolio_item">
+                                        <img src="img/portfolio/015.jpg" alt="image" class="img-responsive" />
+                                        <div class="portfolio_item_hover">
+                                            <div class="portfolio-border clearfix">
+                                                <div class="item_info">
+                                                    <span>Graduate Thesis</span>
+                                                    <em>Code / Data visualization / Web design / Research</em>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+          <!-- end single work -->
+                          <!-- single work -->
+                                <div class="col-md-3 col-sm-6 datavisualization research">
+                                    <a href="16.html" class="portfolio_item">
+                                        <img src="img/portfolio/016.jpg" alt="image" class="img-responsive" />
+                                        <div class="portfolio_item_hover">
+                                            <div class="portfolio-border clearfix">
+                                                <div class="item_info">
+                                                    <span>Phases of the Moon</span>
+                                                    <em>Research / Data visualization</em>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- end single work -->
 
                     <!-- single work -->
                     <div class="col-md-3 col-sm-6 webdesign">
@@ -292,20 +352,7 @@
                     <!-- end single work -->
 
 
-                              <!-- single work -->
-                                    <div class="col-md-3 col-sm-6 printdesign">
-                                        <a href="11.html" class="portfolio_item">
-                                            <img src="img/portfolio/011.jpg" alt="image" class="img-responsive" />
-                                            <div class="portfolio_item_hover">
-                                                <div class="portfolio-border clearfix">
-                                                    <div class="item_info">
-                                                        <span>Catalogue Design</span>
-                                                        <em>Print Design</em>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
+
       <!-- end single work -->
       <!-- single work -->
             <div class="col-md-3 col-sm-6 printdesign">
@@ -322,54 +369,12 @@
                 </a>
             </div>
     <!-- end single work -->
-    <!-- single work -->
-          <div class="col-md-3 col-sm-6 webdesign branding">
-              <a href="14.html" class="portfolio_item">
-                  <img src="img/portfolio/014.jpg" alt="image" class="img-responsive" />
-                  <div class="portfolio_item_hover">
-                      <div class="portfolio-border clearfix">
-                          <div class="item_info">
-                              <span>Website Design</span>
-                              <em>Web Design / Branding</em>
-                          </div>
-                      </div>
-                  </div>
-              </a>
-          </div>
-          <!-- end single work -->
 
 
-                <!-- single work -->
-                      <div class="col-md-3 col-sm-6 datavisualization research webdesign code">
-                          <a href="15.html" class="portfolio_item">
-                              <img src="img/portfolio/015.jpg" alt="image" class="img-responsive" />
-                              <div class="portfolio_item_hover">
-                                  <div class="portfolio-border clearfix">
-                                      <div class="item_info">
-                                          <span>Graduate Thesis</span>
-                                          <em>Code / Data visualization / Web design / Research</em>
-                                      </div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-<!-- end single work -->
 
-<!-- single work -->
-      <div class="col-md-3 col-sm-6 datavisualization research">
-          <a href="16.html" class="portfolio_item">
-              <img src="img/portfolio/016.jpg" alt="image" class="img-responsive" />
-              <div class="portfolio_item_hover">
-                  <div class="portfolio-border clearfix">
-                      <div class="item_info">
-                          <span>Phases of the Moon</span>
-                          <em>Research / Data visualization</em>
-                      </div>
-                  </div>
-              </div>
-          </a>
-      </div>
-      <!-- end single work -->
+
+
+
                 </div>
                 <!-- end portfolio_container -->
             </div>
@@ -383,7 +388,7 @@
 
     <!-- footer -->
     <footer>
-            <p class="copyright">© Sana Shepko 2019</p>
+            <p class="copyright">© Sana Shepko 2020</p>
     </footer>
     <!-- end footer -->
 

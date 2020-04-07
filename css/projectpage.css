@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+
+video {
+  width:75%;
+
+}
+.vid-container{
+  display:flex;
+  justify-content:center;
+
+}
+
+.project-top-bar {
+  margin-top:60px;
+    color: #f2dede;
+    background-image: linear-gradient(to right, #e87f6e,#89b1e2);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+}
+/*carousel*/
+img, video {
+  -webkit-box-shadow: 4px 5px 121px -70px rgba(112,112,112,1);
+  -moz-box-shadow: 4px 5px 121px -70px rgba(112,112,112,1);
+  box-shadow: 4px 5px 121px -70px rgba(112,112,112,1);
+}
+
+/* * { box-sizing: border-box; } */
+.carousel {
+  background: #EEE;
+  margin-bottom:120px;
+}
+.flickity-viewport{
+  height:400px;
+}
+.carousel img {
+  display: block;
+  height: 500px;
+  margin-right:200px;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel img {
+    height: 500px;
+  }
+}
+
+
+  .project .bigchunk {
+    padding: 0 20px; }
+
+
+      .project .bigchunk h1 {
+        max-width: 600px;
+        color:#a25e5e;
+        margin: 42px auto 20px;
+        font-size: 20px;
+        font-weight: 500!important;
+}
+
+
+    .project .bigchunk h2 {
+      max-width: 600px;
+      margin: 42px auto 20px;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 600!important;
+      letter-spacing: .7px; }
+
+    .project .bigchunk h3 {
+      max-width: 600px;
+      margin: 20px auto 0;
+      font-size: 18px;
+      line-height: 31px;
+      color: #b99998;
+      font-weight: 400!important;
+      letter-spacing: .7px; }
+
+    .project .bigchunk .img-container {
+      display: block;
+      max-width: 1000px;
+      margin: 40px auto; }
+      .project .bigchunk .img-container .image-1 {
+        width: 100%; }
+        .project .bigchunk .img-container .image-1 img {
+          width: 100%; }
+      .project .bigchunk .img-container .image-2 {
+        width: 100%;
+        margin-bottom: 20px; }
+        .project .bigchunk .img-container .image-2 img {
+          width: 100%; }
+      .project .bigchunk .img-container .image-3 {
+        width: 100%;
+        margin-bottom: 20px; }
+        .project .bigchunk .img-container .image-3 img {
+          width: 100%; }
+      .project .bigchunk .img-container .image-narrow {
+        width: 100%;
+        margin: 0 auto; }
+        .project .bigchunk .img-container .image-narrow img {
+          width: 100%; }
+    .project .bigchunk .img-container-narrow {
+      display: block; }
+      .project .bigchunk .img-container-narrow .image-narrow {
+        width: 100%;
+        margin: 0 auto; }
+        .project .bigchunk .img-container-narrow .image-narrow img {
+          width: 100%; }
+    .project .bigchunk .projecttext {
+      margin: 40px auto;
+      max-width: 600px; }
+    .project .bigchunk .caption {
+      margin: 10px auto 0;
+      max-width: 600px;
+      font-size: 15px;
+      line-height: 21px;
+      font-weight: 300;
+      text-align: center;
+}
+      .project .bigchunk .caption a {
+        background-color: rgba(60, 60, 60, 0.12);
+
+        text-decoration: none;
+        padding: 0 5px;
+        border-radius: 5px;
+        transition: .4s ease; }
+      .project .bigchunk .caption a:hover {
+
+        transition: .4s ease; }
+      .project .bigchunk .caption a:active {
+        transition: .4s ease;
+ }
+    @media only screen and (min-width: 980px) {
+      .project .bigchunk .p-2col {
+        margin: 40px auto;
+        max-width: 850px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; }
+        .project .bigchunk .p-2col .col {
+          max-width: 400px;
+          margin: 0 10px 20px; } }
+
+
+@media only screen and (min-width: 450px) {
+  .project-nav nav .sidebar .sidebar-body .project-link {
+    border-top: 2px solid rgba(60, 60, 60, 0.12); }
+
+  .project .bigchunk h1 {
+    font-size: 45px;
+    line-height: 50px; }
+  .project .bigchunk h2 {
+    font-size: 22px; }
+  .project .bigchunk h3 {
+    margin: 15px auto 0;
+    font-size: 22px; }
+  .project .bigchunk .img-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px; }
+    .project .bigchunk .img-container .image-1 {
+      width: 100%; }
+      .project .bigchunk .img-container .image-1 img {
+        width: 100%; }
+    .project .bigchunk .img-container .image-2 {
+      width: 100%;
+      margin-bottom: 0; }
+      .project .bigchunk .img-container .image-2 img {
+        width: 100%; }
+    .project .bigchunk .img-container .image-3 {
+      width: 47%;
+      margin-bottom: 0; }
+      .project .bigchunk .img-container .image-3 img {
+        width: 100%; }
+    .project .bigchunk .img-container .image-narrow {
+      max-width: 600px;
+      width: 600px;
+      margin: 0 auto; }
+      .project .bigchunk .img-container .image-narrow img {
+        width: 100%; }
+  .project .bigchunk .img-container-narrow {
+    margin-bottom: 40px; }
+    .project .bigchunk .img-container-narrow .image-narrow {
+      max-width: 600px;
+      margin: 0 auto; }
+      .project .bigchunk .img-container-narrow .image-narrow img {
+        width: 100%; } }
+@media only screen and (min-width: 768px) {
+  .project .bigchunk {
+    padding: 40px 50px 100px; }
+    .project .bigchunk h1 {
+      font-size: 45px;
+      line-height: 50px; }
+    .project .bigchunk h2 {
+      font-size: 25px; }
+    .project .bigchunk h3 {
+      font-size: 25px;
+      font-weight: 900; }
+    .project .bigchunk .img-container {
+      display: flex;
+      justify-content: center!important;
+      flex-wrap: wrap; }
+      .project .bigchunk .img-container .image-1 {
+        width: 50%; }
+        .project .bigchunk .img-container .image-1 img {
+          width: 100%; }
+      .project .bigchunk .img-container .image-2 {
+        width: 75%;
+        margin-bottom: 0; }
+        .project .bigchunk .img-container .image-2 img {
+          width: 100%; }
+      .project .bigchunk .img-container .image-3 {
+        width: 30%;
+        margin-bottom: 0; }
+        .project .bigchunk .img-container .image-3 img {
+          width: 100%; } }
+@media only screen and (max-width: 360px) {
+  .project .bigchunk {
+    padding: 50px 20px; }
+    .project .bigchunk h1 {
+      font-size: 32px;
+      line-height: 38px; }
+    .project .bigchunk h2 {
+      margin: 60px auto 20px; }
+    .project .bigchunk h3 {
+      margin: 15px auto 0; }}
+@media only screen and (max-width: 400px), (max-height: 400px) {
+  .bottom-line-project {
+    height: 0; }
+
+  .project {
+    border: 0 solid #e8e8e8; } }
