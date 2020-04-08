@@ -21,8 +21,13 @@ video {
     background-position: center center;
     text-align: center;
 }
+@media screen and (max-width:350px){
+  .project-top-bar{
+    margin-top:40px;
+  }
+}
 /*carousel*/
-img, video {
+img {
   -webkit-box-shadow: 4px 5px 121px -70px rgba(112,112,112,1);
   -moz-box-shadow: 4px 5px 121px -70px rgba(112,112,112,1);
   box-shadow: 4px 5px 121px -70px rgba(112,112,112,1);
@@ -47,6 +52,8 @@ img, video {
     height: 500px;
   }
 }
+
+
 
 
   .project .bigchunk {

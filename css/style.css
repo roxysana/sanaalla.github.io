@@ -528,6 +528,11 @@ padding: 20px 20px 0;
 /* box-intro
 ==================================================*/
 
+.box-intro p {
+  line-height: 1.3em;
+
+}
+
 .box-intro {
 
     display: table;
@@ -558,6 +563,53 @@ b i:last-child {
     text-transform: uppercase;
     color: #ebc9c4;
     line-height: 1.7
+}
+
+@media screen and (max-width:1024px){
+.box-intro{
+  padding-left:12%;
+
+}
+h1 {
+  font-size:40px;
+}
+
+}
+@media screen and (max-width:500px){
+.box-intro{
+  padding-left:2%;
+
+}
+h1 {
+  font-size:30px;
+}
+
+}
+@media screen and (max-width:412px){
+.box-logo img{
+  width:100px;
+}
+
+}
+@media screen and (max-width:350px){
+
+  .box-logo img{
+    width:60px;
+  }
+  .box-logo{
+    padding: 5px 10px 0;
+}
+
+h1 {
+  font-size:18px;
+
+}
+h2 {
+  font-size:16px;
+}
+p li{
+  font-size:14px;
+}
 }
 
 
@@ -1250,7 +1302,7 @@ textarea:focus {
 
 @media only screen and (max-width: 670px) {
     .box-headline {
-        font-size: 100px;
+        font-size: 30px;
     }
     .box-intro h5 {
         font-size: 12px;
@@ -1259,9 +1311,7 @@ textarea:focus {
         padding: 5px 1em;
         font-size: 14px;
     }
-    .box-primary-nav {
-        padding: 80px 0 0;
-    }
+
     .box-primary-nav .box-social a {
         font-size: 23px;
     }
