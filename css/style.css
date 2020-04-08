@@ -580,18 +580,17 @@ h1 {
   padding-left:2%;
 
 }
-h1 {
+ h1 {
   font-size:30px;
 }
 
 }
-@media screen and (max-width:412px){
-.box-logo img{
-  width:100px;
-}
 
-}
-@media screen and (max-width:350px){
+@media screen and (max-width:414px){
+
+  #display-none {
+    display:none!important;
+  }
 
   .box-logo img{
     width:60px;
@@ -600,7 +599,7 @@ h1 {
     padding: 5px 10px 0;
 }
 
-h1 {
+.box-intro h1 {
   font-size:18px;
 
 }

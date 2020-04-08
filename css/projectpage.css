@@ -21,9 +21,19 @@ video {
     background-position: center center;
     text-align: center;
 }
-@media screen and (max-width:350px){
+@media screen and (max-width:414px){
+
+  .project-top-bar p {
+    font-size:13px;
+  }
   .project-top-bar{
     margin-top:40px;
+  }
+  video{
+    display:none;
+  }
+  #display-none {
+    display:none!important;
   }
 }
 /*carousel*/
@@ -64,7 +74,7 @@ img {
         max-width: 600px;
         color:#a25e5e;
         margin: 42px auto 20px;
-        font-size: 20px;
+
         font-weight: 500!important;
 }
 
@@ -227,7 +237,7 @@ img {
           width: 100%; } }
 @media only screen and (max-width: 360px) {
   .project .bigchunk {
-    padding: 50px 20px; }
+    padding: 0px 20px; }
     .project .bigchunk h1 {
       font-size: 32px;
       line-height: 38px; }
