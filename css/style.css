@@ -1254,6 +1254,16 @@ textarea:focus {
     margin-top: 20px;
 }
 
+@media screen and (max-width:991px){
+  .contact-info {
+    padding-left:50px;
+    margin-bottom:1em;
+
+  }
+
+
+}
+
 .contact-info i {
     height: 30px;
     width: 30px;
