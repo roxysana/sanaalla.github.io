@@ -350,6 +350,57 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.96);
 }
 
+/*-----SPECIAL HOME BOX HEADER ------*/
+
+
+
+
+.box-header-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.box-header-home {
+  color: #333;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
+    box-shadow: none;
+}
+
+.box-header-home {
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.box-header-home.is-fixed {
+    position: fixed;
+    top:-15px;
+    background-color: rgba(255, 255, 255, 0.96);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+
+.box-header-home.menu-is-open {
+    background-color: black!important;
+}
+
+/*---end Home box header----*/
+
+
 .box-logo {
     display: block;
 padding: 20px 20px 0;
@@ -463,7 +514,7 @@ padding: 20px 20px 0;
     top: 0;
     height: 100%;
     width: 100%;
-    background: white;
+  background-color:#cc8d91;
     z-index: 2;
     text-align: center;
     padding: 50px 0;
@@ -498,7 +549,7 @@ padding: 20px 20px 0;
     border-radius: 0.25em;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-    color: #c17b7b;
+    color: white;
     text-decoration: none;
     font-weight: 500;
 }
@@ -573,7 +624,34 @@ padding: 20px 20px 0;
     vertical-align: middle;
 }
 .container-fluid {
-  background-image: linear-gradient(to right, #e87f6e,#89b1e2);
+  background: linear-gradient(90deg, #e87f6e, #81a0c7, #c69898, #B16E6C);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 10s ease infinite;
+	        animation: gradient 10s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+		background-position: 100%;
+	}
+	50% {
+		background-position:50%;
+	}
+	100% {
+		background-position: 0%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 100%;
+	}
+	50% {
+		background-position:50%;
+	}
+	100% {
+		background-position: 0%;
+	}
 }
 
 .box-intro em {
