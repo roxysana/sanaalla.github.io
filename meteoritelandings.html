@@ -105,10 +105,15 @@
           <p>During my graduate studies at OCAD University, I took a course called <a href="https://coursecatalogue.ocadu.ca/Lists/Courses/CustomDispForm.aspx?ID=4541&InitialTabId=Ribbon.Read"
             target="_blank">
           From Data to Perception,</a>
-            which focused on studying the ways that data can be displayed to envoke meaningful communication and understanding.
-             Part of this course was to create a project which incorporated a dataset with more than 5,000 records.
-             As someone who has always been interested in astronomy, I immediately thought to incorporate one of the datasets that shows astronomical findings.
-
+          which focused on studying the ways that data can be displayed to invoke meaningful
+          communication and understanding. The Meteorite Landings Interactive Map was the culmination
+           of an assignment which asked students to portray a dataset with more than 5,000 records. As
+            someone who has always been interested in astronomy, I was drawn to exploring NASA's database library.
+            Working with two other students in the class, we began diving into the project, and chose
+            <a href="https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh" target="_blank">a dataset</a> from
+            <a href="https://nasa.github.io/data-nasa-gov-frontpage/" target="_blank">NASA's Open Data Portal</a>
+that documented all of the historical and predicted meteorite landings on Earth.
+            The dataset includes recorded meteorite crashes dating back centuries, resulting in over 40,000 records.
         </p>
 
 
@@ -128,20 +133,68 @@
 <br>
         <h1>Process</h1>
 
+<div class="projecttext">
+  <p>
+  At the outset of the project we decided we wanted an element of exploration within the data visualization.
+  This would engage the viewer with the data, allowing them to become more invested in the information itself.</p>
+</p>
+
+  <p>
+
+We then began to look for tools we could use to realize this goal. After debating tools like D3.js and Tableau
+I discovered Mapbox; an online data visualization tool for representing geographical data. The features would
+ allow for an initial iteration of the map but would require coding in order to make it more interactive and
+ utilize additional features.
+</p>
+</div>
+
+<h2>Data and production </h2>
 
 
-        <div class="projecttext">
-          <p>
 
-  I decided to explore <a href="https://nasa.github.io/data-nasa-gov-frontpage/" target="_blank">NASA's Open Data Portal,</a>
-and chose <a href="https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh" target="_blank">a dataset</a> that documented all of the historical and predicted meteorite landings on Earth.
+<div class="projecttext">
 
-           The dataset includes recorded meteorite crashes dating back to the 80s, resulting in over 40,000 records.
+ <p>
+The process included cleaning up the data spreadsheet downloaded from NASA. Empty sections needed values, while
+ latitude and longitude needed to be separated into their own columns.
+</p>
+</div>
 
 
-          </p>
+ <div class="img-container">
+   <div class="image-1">
+     <img src="img/meteorite/dataset.png"/>
+   </div>
+ </div>
 
-        </div>
+ <div class="projecttext">
+  <p>
+ Once this was done we were able to upload the data to Mapbox for the initial version of the map.
+ We then decided on the overall look of the map; we wanted it to reference the night sky so we
+ chose a dark base for the map with blurred and light-coloured ellipses.
+</p>
+</div>
+
+
+ <div class="img-container">
+   <div class="image-2">
+     <img src="img/meteorite/production.png"/>
+   </div>
+ </div>
+
+ <div class="projecttext">
+
+ <p>
+From here we needed to make the map more specialized. Year ranges were assigned colours to distinguish the age of
+the meteors, as well as additional information upon clicking on an ellipse.
+</p>
+
+<p>
+Sound was also discussed by all, but we were not able to find a way to incorporate it in an intuitive way.
+</p>
+</div>
+
+
 
 
         <div class="projecttext">
@@ -166,10 +219,23 @@ and chose <a href="https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9
         </div>
 
 
+
+
         <div class="projecttext" style="text-align:center">
         <a href="https://webspace.ocad.ca/~3164381/meteorite/" target="_blank" class="project-button">Website</a>
         </div>
 
+        <div class="projecttext">
+        <h2>Conclusion</h2>
+          <p> There are a lot of directions that we could take a project like this in future iterations.
+            As mentioned previously, sound is an area that we would have liked to explore and we hope to
+            find an intuitive and complementary way to incorporate it. </p>
+<p>
+It would also be interesting to have the ellipses appear in the historical order of their fall,
+as an animated sequence before the viewer begins exploring the map. This way a user might better be
+able to see an accumulation of the meteors and feel the impact of the data.
+</p>
+  </div>
 
 </div>
 </div>
