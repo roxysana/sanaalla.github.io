@@ -76,7 +76,7 @@
                 <nav>
                     <ul class="box-primary-nav">
                         <li><a href="about.html">About me</a></li>
-                        <li><a href="services.html">services</a></li>
+                        <!--  <li><a href="services.html">services</a></li>-->
                         <li><a href="portfolio.html">portfolio</a></li>
 
 
@@ -116,7 +116,7 @@
 <br>
         <div class="img-container">
           <div class="image-2">
-            <img src="img/korinya/poster-mockup.jpg"/>
+            <img src="img/korinya/poster-mockup.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"/>
           </div>
         </div>
 
@@ -133,10 +133,10 @@
 
         <div class="img-container">
         <div class="image-2">
-        <img src="img/korinya/zemlya1.jpg"/>
+        <img src="img/korinya/zemlya1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"/>
         </div>
         <div class="image-2">
-        <img src="img/korinya/zemlya2.jpg"/>
+        <img src="img/korinya/zemlya2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"/>
         </div>
         </div>
 
@@ -150,9 +150,11 @@
 
 <div class="img-container">
 <div class="image-1">
-<img src="img/korinya/vesnianky-screen.png"/>
+<img src="img/korinya/vesnianky-screen.png" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"/>
 </div>
 </div>
+
+
 <br>
 <br>
 <div class="projecttext">
@@ -175,7 +177,7 @@
 
 <div class="img-container">
 <div class="image-2">
-<img src="img/korinya/web-mockup.jpg"/>
+<img src="img/korinya/web-mockup.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"/>
 </div>
 </div>
 
@@ -188,16 +190,58 @@
         </div>
         <div class="img-container">
         <div class="image-2">
-        <img src="img/korinya/live-cd-mockup.jpg"/>
+        <img src="img/korinya/live-cd-mockup.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"/>
         </div>
         <div class="image-2">
-        <img src="img/korinya/live-mockup2.jpg"/>
+        <img src="img/korinya/live-mockup2.jpg"onclick="openModal();currentSlide(7)" class="hover-shadow cursor"/>
         </div>
         </div>
 <br>
 
 </div>
 </div>
+
+
+<!--BEGIN MODAL-->
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="img/korinya/poster-mockup.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/korinya/zemlya1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/korinya/zemlya2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/korinya/vesnianky-screen.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/korinya/web-mockup.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/korinya/live-cd-mockup.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="img/korinya/img/korinya/live-mockup2.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+</div>
+
+<!--END MODAL-->
 
     <!-- footer -->
     <footer>

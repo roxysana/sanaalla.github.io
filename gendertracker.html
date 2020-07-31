@@ -76,7 +76,7 @@
                 <nav>
                     <ul class="box-primary-nav">
                         <li><a href="about.html">About me</a></li>
-                        <li><a href="services.html">services</a></li>
+                        <!--  <li><a href="services.html">services</a></li>-->
                         <li><a href="portfolio.html">portfolio</a></li>
 
 
@@ -115,7 +115,7 @@
         </div>
         <div class="img-container">
           <div class="image-2">
-            <img src="img/gendertracker/main.png"/>
+            <img src="img/gendertracker/main.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"/>
           </div>
         </div>
         <br>
@@ -136,7 +136,7 @@
           <h2>Color palette</h2>
         <div class="img-container">
           <div class="image-1">
-            <img src="img/gendertracker/palette.jpg"/>
+            <img src="img/gendertracker/palette.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"/>
           </div>
         </div>
 
@@ -148,12 +148,12 @@
 
         <div class="carousel"
           data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
-          <img src="img/gendertracker/1.png" alt="concept one" />
-          <img src="img/gendertracker/2.png" alt="concept two" />
-          <img src="img/gendertracker/3.png"  alt="concept three" />
-          <img src="img/gendertracker/4.png"  alt="concept four" />
-          <img src="img/gendertracker/5.png"  alt="concept five" />
-          <img src="img/gendertracker/6.png"  alt="concept six" />
+          <img src="img/gendertracker/1.png" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"/>
+          <img src="img/gendertracker/2.png" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"/>
+          <img src="img/gendertracker/3.png"  onclick="openModal();currentSlide(5)" class="hover-shadow cursor"/>
+          <img src="img/gendertracker/4.png"  onclick="openModal();currentSlide(6)" class="hover-shadow cursor"/>
+          <img src="img/gendertracker/5.png"  onclick="openModal();currentSlide(7)" class="hover-shadow cursor"/>
+          <img src="img/gendertracker/6.png"  onclick="openModal();currentSlide(8)" class="hover-shadow cursor"/>
         </div>
 
 
@@ -187,27 +187,45 @@
 </div>
 </div>
 
-<!--ADDING MODAL-->
-<!--
-<div class="modal modal-fullscreen fade in" id="gendertrackervideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" style="padding-right: 15px;">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <h4 style="display: none;" class="modal-title" id="myModalLabel">Gender Tracker Final Design</h4>
-              </div>
-              <div class="videoWrapper" id="modernVideoContainer">
-               <iframe class="video-frame" width="1920" height="1080" src="https://www.youtube.com/embed/Qm2Eb40ZRQk" frameborder="0" allow="autoplay;picture-in-picture" allowfullscreen=""></iframe>
-              </div>
 
+<!--BEGIN MODAL-->
 
-            </div>
-          </div>
-        </div> -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="img/gendertracker/main.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/gendertracker/palette.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/gendertracker/1.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/gendertracker/2.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/gendertracker/3.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/gendertracker/4.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/gendertracker/5.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="img/gendertracker/6.png" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+</div>
 
 <!--END MODAL-->
-
-
 
     <!-- footer -->
     <footer>
